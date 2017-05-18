@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+
+</head>
+<body>
+<p id="paragraph"></p>
+<button onclick ="myFunction()">показать параграф</button>
+<script>
+function myFunction() {
+	document.getElementById('paragraph').innerHTML = 'прЫвет. JavaScript';
+	}
+</script>
+
+<hr>
+<p>Введите число от 1 до 99</p>
+
+<input id="number" type="text">
+
+<button type="button" onclick="myfunction()">Проверить</button>
+
+<p id="result"></p>
+<hr>
+<p id="paragraph2">Привет2</p>
+<button type="button" onclick="myfunction2()">Вызов функции</button>
+
+
+
+<script>
+function myfunction() {
+var number, result;
+
+number = document.getElementById('number').value;
+
+if (isNaN(number) || number < 1 || number > 99) {
+ result = 'число не верно';
+} else{
+ result = 'число верно';
+}
+	document.getElementById('result').innerHTML = result;
+}
+</script>
+
+<script>
+function myfunction2() {
+a = 5
+b = 6
+c = a + b;
+	//document.getElementById('paragraph2').innerHTML = c;
+	//document.write (c);
+	console.log(c);
+}
+</script>
+
+</body>
+</html>
